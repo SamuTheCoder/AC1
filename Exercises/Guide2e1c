@@ -1,0 +1,8 @@
+.data
+.text
+.globl main
+main: 
+ ori $t0,$0,0x0000E543 # substituir val_1 e val_2 pelos
+ not $t1, $t0 #Complemento para 2: negar todos os bits e store em $t1
+ addi $t1,$t1,1#E adicionar 1 bit e store em $1
+ jr $ra # fim do programa
